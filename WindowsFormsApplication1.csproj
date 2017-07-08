@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87C05356-984D-44A8-BDE0-148A7634A430}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.ArcMapUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CartoUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DisplayUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=0ed4c5f2bbf81ac0, processorArchitecture=MSIL" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeQueryCmd.cs" />
+    <Compile Include="ClassBreaksRendererSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassBreaksRendererSymbol.designer.cs">
+      <DependentUpon>ClassBreaksRendererSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassBreaksRendererSymbolCmd.cs" />
+    <Compile Include="ColorRampForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorRampForm.designer.cs">
+      <DependentUpon>ColorRampForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCircleTool.cs" />
+    <Compile Include="CreateGeopraphicCoordinateSystem.cs" />
+    <Compile Include="CreatePointTool.cs" />
+    <Compile Include="CreatePolygonTool.cs" />
+    <Compile Include="CreatePolylineTool.cs" />
+    <Compile Include="CreateProjectedCoordinateSystem.cs" />
+    <Compile Include="CreateRectangleTool.cs" />
+    <Compile Include="CreateVerticalCoordinateSystem.cs" />
+    <Compile Include="DotDensitySymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DotDensitySymbols.designer.cs">
+      <DependentUpon>DotDensitySymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DotDensitySymbolsCmd.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeoMapAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeoMapAttribute.Designer.cs">
+      <DependentUpon>GeoMapAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetSymbolByControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetSymbolByControl.designer.cs">
+      <DependentUpon>GetSymbolByControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraduatedColorSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraduatedColorSymbols.designer.cs">
+      <DependentUpon>GraduatedColorSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraduatedColorSymbolsCmd.cs" />
+    <Compile Include="GraduatedSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraduatedSymbols.designer.cs">
+      <DependentUpon>GraduatedSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraduatedSymbolsCmd.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProportionalSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProportionalSymbols.designer.cs">
+      <DependentUpon>ProportionalSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProportionalSymbolsCmd.cs" />
+    <Compile Include="SelectByAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByAttribute.designer.cs">
+      <DependentUpon>SelectByAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSymbolByControl .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSymbolByControl .designer.cs">
+      <DependentUpon>SelectSymbolByControl .cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleSymbol.designer.cs">
+      <DependentUpon>SingleSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleSymbolCmd.cs" />
+    <Compile Include="StatisticsSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsSymbols.designer.cs">
+      <DependentUpon>StatisticsSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsSymbolsCmd.cs" />
+    <Compile Include="SymbolizationByLayerPropPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymbolizationByLayerPropPage.designer.cs">
+      <DependentUpon>SymbolizationByLayerPropPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SymbolizationByLayerPropPageCmd.cs" />
+    <Compile Include="UniqueValuesSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniqueValuesSymbol.designer.cs">
+      <DependentUpon>UniqueValuesSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniqueValuesSymbolCmd.cs" />
+    <Compile Include="地图标注.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="地图标注.designer.cs">
+      <DependentUpon>地图标注.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClassBreaksRendererSymbol.resx">
+      <DependentUpon>ClassBreaksRendererSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorRampForm.resx">
+      <DependentUpon>ColorRampForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DotDensitySymbols.resx">
+      <DependentUpon>DotDensitySymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoMapAttribute.resx">
+      <DependentUpon>GeoMapAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetSymbolByControl.resx">
+      <DependentUpon>GetSymbolByControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraduatedColorSymbols.resx">
+      <DependentUpon>GraduatedColorSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraduatedSymbols.resx">
+      <DependentUpon>GraduatedSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProportionalSymbols.resx">
+      <DependentUpon>ProportionalSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByAttribute.resx">
+      <DependentUpon>SelectByAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSymbolByControl .resx">
+      <DependentUpon>SelectSymbolByControl .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleSymbol.resx">
+      <DependentUpon>SingleSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsSymbols.resx">
+      <DependentUpon>StatisticsSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SymbolizationByLayerPropPage.resx">
+      <DependentUpon>SymbolizationByLayerPropPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniqueValuesSymbol.resx">
+      <DependentUpon>UniqueValuesSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="地图标注.resx">
+      <DependentUpon>地图标注.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--
+
+
+
+      Workaround for VS2010 .NET 3.5 application referencing x86 assembly in resx file on 64-bit OS
+
+      http://social.msdn.microsoft.com/Forums/en-US/msbuild/thread/e5900710-9849-4d10-aa28-48b734d06bf2 
+
+       
+
+-->
+  <PropertyGroup>
+    <ForceResGen32Bit Condition="'$(MSBuildToolsVersion)'=='4.0' And '$(PROCESSOR_ARCHITEW6432)'!='' And '$(TargetingClr2Framework)'=='true' And '$(PlatformTarget)'=='x86'">true</ForceResGen32Bit>
+  </PropertyGroup>
+  <Target Name="BeforeResGen" Condition="'$(ForceResGen32Bit)' == 'true'">
+    <PropertyGroup>
+      <ResGenSdkToolsPath>$(IntermediateOutputPath)ResGenForced32Bit\</ResGenSdkToolsPath>
+    </PropertyGroup>
+    <!-- Copy resgen.exe to intermediate working directory for UAC settings -->
+    <Copy SourceFiles="$(TargetFrameworkSDKToolsDirectory)ResGen.exe" DestinationFiles="$(ResGenSdkToolsPath)ResGen.exe" />
+    <!-- corflags.exe resgen.exe /32BIT+ /Force-->
+    <Exec WorkingDirectory="$(ResGenSdkToolsPath)" Command="&quot;$(TargetFrameworkSDKToolsDirectory)corflags.exe&quot; ResGen.exe /32BIT+ /Force" />
+    <!-- GenerateResource Task parameters
+
+        Using the non-64bit Tracker.exe and indicate resgen.exe has been forced to x86 -->
+    <PropertyGroup>
+      <ResGenTrackerSdkPath>$(SDK40ToolsPath)</ResGenTrackerSdkPath>
+      <ResGenToolArchitecture>Managed32Bit</ResGenToolArchitecture>
+      <CacheTargetFrameworkSDKToolsDirectory>$(TargetFrameworkSDKToolsDirectory)</CacheTargetFrameworkSDKToolsDirectory>
+      <TargetFrameworkSDKToolsDirectory>$(ResGenSdkToolsPath)</TargetFrameworkSDKToolsDirectory>
+    </PropertyGroup>
+  </Target>
+  <Target Name="AfterResGen" Condition="'$(ForceResGen32Bit)' == 'true'">
+    <PropertyGroup>
+      <TargetFrameworkSDKToolsDirectory>$(CacheTargetFrameworkSDKToolsDirectory)</TargetFrameworkSDKToolsDirectory>
+    </PropertyGroup>
+    <RemoveDir Directories="$(ResGenSdkToolsPath)" Condition="Exists('$(ResGenSdkToolsPath)')" />
+  </Target>
+</Project>
